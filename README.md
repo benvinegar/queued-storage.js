@@ -28,7 +28,14 @@ queuedStorage.getItem('foo'); // => 'bar'
 queuedStorage.removeItem('foo');
 
 queuedStorage.clear();
+```
 
+QueuedStorage also provides some additional utility methods for inspecting or modifying the queue:
+
+```javascript
+queuedStorage.getQueue(); // => ['foo']
+
+queuedStorage.setQueue(['foo']);
 ```
 
 ## Tests
